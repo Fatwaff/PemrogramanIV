@@ -235,6 +235,8 @@ class _HomePageState extends State<HomePage> {
             userCreate: null,
             userUpdate: _userUpdate!,
           )
+        else if (_users.isNotEmpty || _result != '-')
+          const Text("")
         else
           const Text("Data Kosong"),
       ],

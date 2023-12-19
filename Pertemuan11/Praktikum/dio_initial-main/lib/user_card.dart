@@ -27,7 +27,7 @@ class UserCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  width: 70,
+                  width: 80,
                   child: Text(
                     'ID',
                     style: TextStyle(
@@ -47,7 +47,7 @@ class UserCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(
-                width: 70,
+                width: 80,
                 child: Text(
                   'Name',
                   style: TextStyle(
@@ -69,7 +69,7 @@ class UserCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(
-                width: 70,
+                width: 80,
                 child: Text(
                   'Job',
                   style: TextStyle(
@@ -90,11 +90,11 @@ class UserCard extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
-                width: 70,
+              SizedBox(
+                width: 80,
                 child: Text(
-                  'Created At',
-                  style: TextStyle(
+                  userCreate?.createdAt != null ? 'Created At' : 'Updated At',
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                   ),
                 ),
